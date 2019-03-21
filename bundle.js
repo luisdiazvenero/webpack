@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./index.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -93,7 +93,18 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("console.log('hola mundo desde webpack');\n\n\n//# sourceURL=webpack:///./index.js?");
+eval("console.log('hola mundo desde webpack');\nconsole.log('hola desde webpack, en un webpack.config');\n\n\n//# sourceURL=webpack:///./index.js?");
+
+/***/ }),
+
+/***/ 0:
+/*!*****************************!*\
+  !*** multi ./index.js json ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("__webpack_require__(/*! /Users/luis/Desktop/Platzi/webpack/index.js */\"./index.js\");\n!(function webpackMissingModule() { var e = new Error(\"Cannot find module 'json'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\n\n\n//# sourceURL=webpack:///multi_./index.js_json?");
 
 /***/ })
 
