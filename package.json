@@ -18,7 +18,8 @@
     "build:video": "webpack --config ./url-loader-video/webpack.config.js --mode development",
     "build:json": "webpack --config ./json-loader/webpack.config.js --mode development",
     "build:react": "webpack --config ./react/webpack.config.js --mode development",
-    "build:sass": "webpack --config ./sass-loader/webpack.config.js --mode development"
+    "build:sass": "webpack --config ./sass-loader/webpack.config.js --mode development",
+    "build:stylus": "webpack --config ./stylus-loader/webpack.config.js --mode development"
   },
   "keywords": [
     "webpack"
@@ -38,6 +39,8 @@
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
     "url-loader": "^1.1.2",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.2.3",
