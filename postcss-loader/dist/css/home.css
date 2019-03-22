@@ -1,0 +1,15 @@
+.Teacher {
+  border: 1px solid #f00;
+  display: flex;
+  background: #f00;
+}
+
+.Teachers {
+  border: 5px dashed orange;
+  padding: 10px;
+  background: gray; }
+
+body {
+  background: #6c94be;
+}
+
