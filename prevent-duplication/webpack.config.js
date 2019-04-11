@@ -1,14 +1,16 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const webpack = require('webpack');
 
 module.exports = {
   //entry: path.resolve(__dirname,'index.js'),
   entry: {
-    home: path.resolve(__dirname,'src/js/index.js')
+    home: path.resolve(__dirname,'src/js/index.js'),
+    contact: path.resolve(__dirname,'src/js/contact.js')
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js'
+    filename: '[name].js'
   },
   module: {
     rules: [
@@ -45,7 +47,7 @@ module.exports = {
             }
           },
           "postcss-loader"
-        ] 
+        ]
       },
       // {
         // test: que tipo de archivo quiero reconocer
@@ -80,5 +82,11 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "css/[name].css"
     })
-  ]
+  ],
+  optimization: {
+    splitChunks: {
+        name: "common",
+        chunks: "initial"
+    }
+  }
 }

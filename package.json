@@ -21,7 +21,8 @@
     "build:sass": "webpack --config ./sass-loader/webpack.config.js --mode development",
     "build:stylus": "webpack --config ./stylus-loader/webpack.config.js --mode development",
     "build:less": "webpack --config ./less-loader/webpack.config.js --mode development",
-    "build:postcss": "webpack --config ./postcss-loader/webpack.config.js --mode development"
+    "build:postcss": "webpack --config ./postcss-loader/webpack.config.js --mode development",
+    "build:prevent": "webpack --config ./prevent-duplication/webpack.config.js --mode development"
   },
   "keywords": [
     "webpack"
