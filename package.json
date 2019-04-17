@@ -23,7 +23,9 @@
     "build:less": "webpack --config ./less-loader/webpack.config.js --mode development",
     "build:postcss": "webpack --config ./postcss-loader/webpack.config.js --mode development",
     "build:prevent": "webpack --config ./prevent-duplication/webpack.config.js --mode development",
-    "build:vendor": "webpack --config ./vendor/webpack.config.js --mode development"
+    "build:vendor": "webpack --config ./vendor/webpack.config.js --mode development",
+    "build:dll": "webpack --config ./dll/webpack.dll.config.js --mode development",
+    "build:dll:src": "webpack --config ./dll/webpack.config.js --mode development"
   },
   "keywords": [
     "webpack"
